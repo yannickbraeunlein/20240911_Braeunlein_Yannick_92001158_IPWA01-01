@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+    <head>
+        <title>Website der YourFootprintMatters-Organisation</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @media (max-width: 667px) {
+                header {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+                header #logo img {
+                    max-width: 100px;
+                    margin-bottom: 10px;
+                }
+                header .nav {
+                    flex-direction: column;
+                }
+                main {
+                    flex-direction: column;
+                }
+                nav {
+                    width: 100%;
+                }
+            }
+            @media (max-width: 576px) {
+                main {
+                    padding: 0;
+                }
+            }
+            html[dir="rtl"] header .nav {
+                justify-content: flex-start; 
+            }
+
+            html[dir="ltr"] header .nav {
+                justify-content: flex-end; 
+            }
+            .no-border {
+        border: none; 
+         }
+         .bd-example .list-group-item {
+        padding-top: 0; 
+        padding-bottom: 0; 
+        border-left: 1px solid #dee2e6;  
+        border-right: 1px solid #dee2e6; 
+         }
+        </style>
+    </head>
+    <body>
+        <header class="d-flex justify-content-between align-items-center py-3">
+            <div id="logo">
+                <img src="images/Bildschirmfoto 2024-09-05 um 11.57.19.png" alt="YourFootprintMatters-Logo" width="200">
+            </div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <form>
+                            <input type="search" class="form-control" name="suche" placeholder="Suche" maxlength="100" pattern="[a-zA-Z0-9\s]+" required>
+                        </form>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/YourFootprintMatters">Instagram</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/YourFootprintMatters">Facebook</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.tiktok.com/YourFootprintMatters">TikTok</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+                </ul>
+        </header>
+        <main class="d-flex">
+            <nav class="d-flex flex-shrink-0 p-2" style="width: 200px;">
+                <ul class="nav mb-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Homepage</a></li>
+                    <li class="nav-item"><a class="nav-link" href="KnowHow.html">Wie erheben wir Daten?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projekte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="work.html">Zusammenarbeit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Über uns</a></li>
+                </ul>
+            </nav>
+            <div class="me-3">
+            <section class="list-group">
+                <h1 class="list-group-item mb-0">Willkommen auf der Homepage der YourFootprintMatters-Organisation</h1>
+                <p class="list-group-item">
+                    Wir schaffen Transparenz über die jährliche C0₂ Emission von Ländern und Unternehmen.
+                </p>
+            </section> 
+            <section class="list-group"> 
+                <h2 class="list-group-item mb-0">Wie erheben wir Daten?</h2>
+                <p class="list-group-item">
+                    Wir nutzen öffentlich zugängliche Datenquellen, wissenschaftliche Studien sowie Berichte von Regierungen und internationalen Organisationen. 
+                    Durch unabhängige Analysen und Verifizierungsprozesse stellen wir sicher, dass unsere Daten korrekt und aktuell sind. 
+                    Unser Ziel ist es, eine verlässliche Grundlage für den Vergleich der CO₂-Emissionen von Ländern und Unternehmen zu schaffen.
+                </p>
+            </section>    
+            <section class="list-group">   
+                <h2 class="list-group-item mb-0">Projekte</h2>
+                <p class="list-group-item">
+                    Unsere Projekte konzentrieren sich darauf, ein tieferes Verständnis der globalen CO₂-Emissionen zu fördern. 
+                    Wir entwickeln interaktive Plattformen, erstellen detaillierte Berichte und arbeiten an Bildungsinitiativen, um die Öffentlichkeit über die Auswirkungen des Klimawandels aufzuklären. 
+                    Jedes Projekt zielt darauf ab, datenbasierte Lösungen und Handlungsansätze für eine nachhaltigere Zukunft zu bieten.
+                </p>
+            </section>
+            <section class="list-group">       
+                <h2 class="list-group-item mb-0">Zusammenarbeit</h2>
+                <p class="list-group-item">
+                    Wir glauben an die Stärke gemeinsamer Anstrengungen. Daher arbeiten wir eng mit Regierungen, wissenschaftlichen Einrichtungen, Unternehmen und anderen Non-Profit-Organisationen zusammen. 
+                    Durch Partnerschaften und den Austausch von Wissen und Ressourcen schaffen wir eine breitere Basis, um die CO₂-Emissionen effektiv zu erfassen, zu analysieren und gemeinsam Lösungen für den Klimaschutz zu entwickeln.
+                </p>
+            </section>
+            <section class="list-group">  
+                <h2 class="list-group-item mb-0">Über uns</h2>
+                <p class="list-group-item">
+                    Wir sind eine unabhängige Non-Profit-Organisation, die sich der Aufklärung über CO₂-Emissionen von Ländern und Unternehmen widmet. 
+                    Unser Ziel ist es, transparente und leicht zugängliche Informationen bereitzustellen, um das Bewusstsein für den Klimawandel zu schärfen. 
+                    Durch Datenanalyse, Aufklärung und Zusammenarbeit wollen wir eine nachhaltige Zukunft fördern und dazu beitragen, verantwortungsbewusstes Handeln auf globaler Ebene zu unterstützen.
+                </p>
+            </section>   
+            <section class="list-group bd-example">    
+                <h2 class="list-group-item mb-0">Unsere Daten</h2>
+                <p class="list-group-item no-border">
+                    Unter der folgenden Tabelle finden Sie Daten zu den CO₂-Emissionen verschiedener Länder und Unternehmen. 
+                    Die Tabelle bietet Ihnen die Möglichkeit, nach Ländern oder Unternehmen zu sortieren sowie spezifische Einträge über das Suchfeld zu filtern. 
+                    So können Sie schnell relevante Informationen zu den Emissionen finden und die Daten nach Ihren Bedürfnissen übersichtlich darstellen.
+                </p>
+                <div class="list-group-item mb-0">
+                <table id="emissionTable" class="table">
+                    <thead>
+                        <tr>
+                            <th>Land</th>
+                            <th>Unternehmen</th>
+                            <th>CO₂ Emission (in Mio. Tonnen)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Deutschland</td>
+                            <td>Siemens</td>
+                            <td>4.5</td>
+                        </tr>
+                        <tr>
+                            <td>Österreich</td>
+                            <td>Atomic</td>
+                            <td>0.8</td>
+                        </tr>
+                        <tr>
+                            <td>Schweiz</td>
+                            <td>Rolex</td>
+                            <td>1.0</td>
+                        </tr>
+                        <tr>
+                            <td>Italien</td>
+                            <td>Ferrari</td>
+                            <td>2.0</td>
+                        </tr>
+                        <tr>
+                            <td>Frankreich</td>
+                            <td>Yves Saint Laurent</td>
+                            <td>2.8</td>
+                        </tr>
+                        <tr>
+                            <td>Schweden</td>
+                            <td>IKEA</td>
+                            <td>10.0</td>
+                        </tr>
+                        <tr>
+                            <td>Dänemark</td>
+                            <td>LEGO</td>
+                            <td>8.0</td>
+                        <tr>
+                            <td>Schweden</td>
+                            <td>IKEA</td>
+                            <td>10.0</td>
+                        </tr>
+                        <tr>
+                            <td>Finnland</td>
+                            <td>Nokia</td>
+                            <td>12.0</td>
+                        </tr>
+                        <tr>
+                            <td>Irland</td>
+                            <td>Ryanair</td>
+                            <td>200.0</td>
+                        </tr>
+                        <tr>
+                            <td>UK</td>
+                            <td>Rolls-Royc</td>
+                            <td>80.0</td>
+                        </tr>
+                        <tr>
+                            <td>Türkei</td>
+                            <td>Turkish Airlines</td>
+                            <td>180.0</td>
+                        </tr>
+                        <tr>
+                            <td>Norwegen</td>
+                            <td>Telenor</td>
+                            <td>8.0</td>
+                        </tr>
+                        <tr>
+                            <td>USA</td>
+                            <td>Apple</td>
+                            <td>188.0</td>
+                        </tr>
+                        <tr>
+                            <td>China</td>
+                            <td>Alibaba</td>
+                            <td>150.0</td>
+                        </tr>
+                        <tr>
+                            <td>Japan</td>
+                            <td>Toyota</td>
+                            <td>180.0</td>
+                        </tr>
+                        <tr>
+                            <td>Südkorea</td>
+                            <td>Samsung</td>
+                            <td>110.0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </section>
+        </div>
+        </main>
+        <footer class="d-flex justify-content-end py-3 my-4 border-top">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="cpoyright.html">&copy; 2024 YourFootprintMatters-Organisation. Alle Rechte vorbehalten.</a></li>
+                <li class="nav-item"><a class="nav-link" href="privacy.html">Datenschutz</a></li>
+                <li class="nav-item"><a class="nav-link" href="imprint.html">Impressung</a></li>
+                <li class="nav-item"><a class="nav-link" href="terms.html">AGB</a></li>
+            </ul>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#emissionTable').DataTable({
+                    "language": {
+                        "url": "//cdn.datatables.net/plug-ins/1.12.1/i18n/de-DE.json"
+                    },
+                    "order": [[0, "asc"]] 
+                });
+            });
+            document.querySelector('form').addEventListener('submit', function(event) {
+            var searchField = document.querySelector('input[name="suche"]');
+            var userInput = searchField.value;
+
+            var sanitizedInput = userInput.replace(/[^\w\s]/gi, '');
+
+            searchField.value = sanitizedInput;
+
+            if (sanitizedInput !== userInput) {
+            alert("Ungültige Zeichen wurden entfernt.");
+            }
+            });
+        </script>
+    </body>
+</html>
